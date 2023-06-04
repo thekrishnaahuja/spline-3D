@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spline 3d</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(68, 128, 146);
+        }
+        body , .main{
+            height: 500px;
+            width: 100%;
+            align-items: center;
+        }
+        .spline-3d-element{
+            align-items: center;
+            margin-top: 45px;
+            margin-left: 50px;
+            height: 100%;
+            /* border-radius: 70px; */
+            border: 5px solid black;
+            width: 50%;
+        }
+        .info{
+            position: absolute;
+            text-align: center;
+            top: 200px;
+            right: 70px;
+            font-size: 25px;
+        }
+        .info button{
+            border: 3px solid black;
+            border-radius: 50px;
+            padding: 20px;
+            margin-top: 40px;
+            font-weight: bolder;
+            animation: bunty 10s infinite;
+            transition: 1s;
+        }
+        .info button:hover{
+            transform: translateY(-10px);
+            
+        }
+
+        @keyframes bunty {
+            10%{
+                border-color: rgb(50, 50, 104);
+            }
+            30%{
+                border-color: rgb(166, 166, 227);
+            }
+            50%{
+                border-color: rgb(54, 54, 203);
+            }
+            70%{
+                border-color: rgb(86, 86, 113);
+            }
+            90%{
+                border-color: rgb(22, 22, 115);
+            }
+            100%{
+                border-color: rgb(63, 84, 104);
+            }
+        }
+    </style>
+<!-- <div class="main-1"> -->
+    <div class="spline-3d-element">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.357/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/HOPWCpDZXtPuT8RF/scene.splinecode"></spline-viewer>
+    </div>
+
+    <div class="info">
+        <i><h2>ENTOLINE 3D ANIMATION</h2></i>
+        <button><i><h3>press and drag to orbit <br> on screen</i></h3></i></button>
+    </div>
+<!-- </div> -->
+    
+
+</body>
+</html>
